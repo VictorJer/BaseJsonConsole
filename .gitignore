@@ -1,0 +1,21 @@
+# Build outputs
+**/bin/
+**/obj/
+
+# Visual Studio local files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Test results
+TestResults/
+
+# NuGet packages
+*.nupkg
+**/packages/*
+
+# OS files
+.DS_Store
+Thumbs.db
