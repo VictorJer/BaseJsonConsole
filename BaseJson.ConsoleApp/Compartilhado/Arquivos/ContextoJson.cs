@@ -1,5 +1,8 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using BaseJson.ConsoleApp.ModuloNome;
+
+namespace BaseJson.ConsoleApp.Compartilhado.Arquivos;
 
 public class ContextoJson
 {

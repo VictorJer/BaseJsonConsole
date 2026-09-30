@@ -1,6 +1,6 @@
-using BaseJson.ConsoleApp.Compartilhado;
 using BaseJson.ConsoleApp.Utilidade;
-using ListaDeComprasV2.ConsoleApp.Compartilhado.Arquivos;
+
+namespace BaseJson.ConsoleApp.Compartilhado;
 
 public abstract class TelaBase<T> where T : EntidadeBase
 {

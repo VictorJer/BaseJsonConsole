@@ -1,5 +1,6 @@
 using BaseJson.ConsoleApp.Compartilhado;
-using ListaDeComprasV2.ConsoleApp.Compartilhado.Arquivos;
+
+namespace BaseJson.ConsoleApp.ModuloNome;
 
 public class TelaNome : TelaBase<Nome>, ITelaOpcoes, ITelaCrud
 {

@@ -1,4 +1,5 @@
 using BaseJson.ConsoleApp.Compartilhado;
+using BaseJson.ConsoleApp.ModuloNome;
 
 namespace BaseJson.ConsoleApp.Utilidade;
 

@@ -1,6 +1,6 @@
 using BaseJson.ConsoleApp.Compartilhado;
 
-namespace ListaDeComprasV2.ConsoleApp.Compartilhado.Arquivos;
+namespace BaseJson.ConsoleApp.Compartilhado.Arquivos;
 
 public abstract class RepositorioBaseEmArquivo<T> where T : EntidadeBase
 {

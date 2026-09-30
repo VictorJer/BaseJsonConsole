@@ -1,4 +1,5 @@
 ﻿using BaseJson.ConsoleApp.Compartilhado;
+using BaseJson.ConsoleApp.Compartilhado.Arquivos;
 using BaseJson.ConsoleApp.ModuloNome;
 using BaseJson.ConsoleApp.Utilidade;
 

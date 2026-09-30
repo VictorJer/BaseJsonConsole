@@ -1,5 +1,7 @@
 using BaseJson.ConsoleApp.Compartilhado;
 
+namespace BaseJson.ConsoleApp.ModuloNome;
+
 public class Nome : EntidadeBase
 {
     public string NomeUsuario { get; set; } = string.Empty;

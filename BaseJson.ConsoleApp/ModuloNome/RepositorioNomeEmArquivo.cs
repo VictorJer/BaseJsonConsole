@@ -1,5 +1,5 @@
 using BaseJson.ConsoleApp.Compartilhado;
-using ListaDeComprasV2.ConsoleApp.Compartilhado.Arquivos;
+using BaseJson.ConsoleApp.Compartilhado.Arquivos;
 
 namespace BaseJson.ConsoleApp.ModuloNome;
 
