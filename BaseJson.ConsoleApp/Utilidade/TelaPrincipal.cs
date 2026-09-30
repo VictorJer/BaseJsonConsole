@@ -4,43 +4,42 @@ namespace BaseJson.ConsoleApp.Utilidade;
 
 public class TelaPrincipal
 {
-    // private readonly RepositorioCategoriaEmArquivo repositorioCategoria;
-    // private readonly RepositorioProdutoEmArquivo repositorioProduto;
-    // private readonly RepositorioListaComprasEmArquivo repositorioListaCompras; so ADD repositorios nessesarios 
+    private readonly IRepositorio<Nome> repositorioNome;
 
-    public TelaPrincipal(/*RepositorioCategoriaEmArquivo repositorioCategoria*/)
+    public TelaPrincipal(IRepositorio<Nome> repositorioNome)
     {
         // this.repositorioCategoria = repositorioCategoria;
         // this.repositorioProduto = repositorioProduto;
         // this.repositorioListaCompras = repositorioListaCompras; so ADD repositorios nessesarios 
+        this.repositorioNome = repositorioNome;
     }
 
-    // public ITelaOpcoes? ApresentarMenuOpcoesPrincipal()
-    // {
-    //     // Console.Clear();
-    //     Console.WriteLine("---------------------------------");
-    //     Console.WriteLine("Lista de Compras");
-    //     Console.WriteLine("---------------------------------");
-    //     Console.WriteLine("1 - Gerenciar algo");
-    //     Console.WriteLine("2 - Gerenciar algo");
-    //     Console.WriteLine("3 - Gerenciar listas algo");
-    //     Console.WriteLine("S - Sair");
-    //     Console.WriteLine("---------------------------------");
-    //     Console.Write("> ");
-    //     string? opcaoMenuPrincipal = Console.ReadLine()?.ToUpper();
+    public ITelaOpcoes? ApresentarMenuOpcoesPrincipal()
+    {
+        // Console.Clear();
+        Console.WriteLine("---------------------------------");
+        Console.WriteLine("Lista de Compras");
+        Console.WriteLine("---------------------------------");
+        Console.WriteLine("1 - Gerenciar Nome");
+        Console.WriteLine("2 - Gerenciar algo");
+        Console.WriteLine("3 - Gerenciar listas algo");
+        Console.WriteLine("S - Sair");
+        Console.WriteLine("---------------------------------");
+        Console.Write("> ");
+        string? opcaoMenuPrincipal = Console.ReadLine()?.ToUpper();
 
-    //     if (opcaoMenuPrincipal == "S")
-    //         return null;
+        if (opcaoMenuPrincipal == "S")
+            return null;
 
-    //     if (opcaoMenuPrincipal == "1")
-    //         // return new TelaCategoria(repositorioCategoria); so ADD tela 
+        if (opcaoMenuPrincipal == "1")
+            return new TelaNome(repositorioNome);
 
-    //     if (opcaoMenuPrincipal == "2")
-    //         // return new TelaProduto(repositorioProduto, repositorioCategoria);
+        // if (opcaoMenuPrincipal == "2")
+        // return new TelaProduto(repositorioProduto, repositorioCategoria);
 
-    //     if (opcaoMenuPrincipal == "3")
-    //         // return new TelaListaCompras(repositorioListaCompras, repositorioProduto);
+        // if (opcaoMenuPrincipal == "3")
+        // return new TelaListaCompras(repositorioListaCompras, repositorioProduto);
 
-    //     return null;
-    // }
+        return null;
+    }
 }
